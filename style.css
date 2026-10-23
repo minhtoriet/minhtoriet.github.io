@@ -87,7 +87,7 @@ footer .container img {
     border: none;
     background-color: transparent;
     display: inline-block;
-
+    filter: brightness(0) invert(1);
 }
 footer {
     border-top: 1px solid rgb(98, 160, 95);
