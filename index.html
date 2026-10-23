@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header class="first-page">
+            <div class="container">
+                <div class="title">
+                    <h1>Minh Triết</h1>
+                    <p>Software Engineering | Eastern International University</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#personal">Personal</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="about">
+            <div class="container">
+                <h2>About</h2>
+                <p>I'm a senior at Eastern International University (EIU), majoring in Software Engineering.
+                    My projects focuses on back-end systems dedicating to apply knowledge that I leant from school and
+                    hands-on experience.
+                    <br><strong>Field of interest:</strong>
+                </p>
+                <ul>
+                    <li>Distributed Backend System Design</li>
+                    <li>Exploratory Data Analysis (EDA) + Machine Learning</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <a href="https://github.com/minhtoriet/wanabe-banking-system">(Conceptual) Banking System</a>
+                    <p>A small project focusing on key banking system domains, using modulith architecture and database
+                        transactions.</p>
+                    <p><strong>Tech stack:</strong> ASP.NET, JavaScript, MySQL</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/minhtoriet/NYC-Collision-Data-EDA">NYC Motor Vehicle Collisions -
+                        Severity Prediction</a>
+                    <p>Exploratory data analysis and a from-scratch attempt at predicting whether a motor vehicle
+                        collision in New York City resulted in an injury or fatality, using the NYC Open Data "Motor
+                        Vehicle Collisions - Crashes" dataset (~2.27M rows).</p>
+                    <p><strong>Tech stack:</strong> Numpy, Pandas, Scikit-learn</p>
+                    <p><strong>Result: </strong>Severity turns out to be a genuinely hard target to predict from
+                        crash-level metadata alone (time, location, vehicle type, contributing factor). The best model
+                        reached F1 ≈ 0.49, Accuracy ≈ 0.7 on the positive (injury/fatal) class after feature
+                        engineering, imbalance handling, and hyperparameter search.</p>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/minhtoriet/image-processor">ASCII Image/Text Generator</a>
+                    <p>Upload a picture, get back a colored ASCII-art rendering of it. Under the hood it is an
+                        asynchronous, queue-based backend: the API never does the heavy image work itself. It stores the
+                        upload, records a job, and hands the work to a separate worker process.</p>
+                    <p><strong>Tech stack: </strong>TypeScript Fastify, TypeBox, BullMQ on Redis, PostgreSQL, Prisma,
+                        React, Cloudflare R2, AWS EC2</p>
+                    <p><strong>Result: </strong>A completed app, ready to be delployed on Cloud Instances.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts">
+            <div class="container">
+                <h2>Contacts and Profiles</h2>
+                <ul>
+                    <li><a href="mailto:triet.vohoang.cit23@eiu.edu.com">triet.vohoang.cit23@eiu.edu.com</a></li>
+                    <li><a href="https://github.com/minhtoriet" target="_blank">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/trie/" target="_blank">LinkedIn</a></li>
+                    <li><a href="assets/files/cv.pdf" target="_blank">CV</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="personal">
+            <div class="container">
+                <h2>Personal</h2>
+                <p>I enjoy gaming and reading outside of work and studies. Visual Novel, Puzzle,
+                    and Co-operative games have helped me greatly in terms of entertainment and life fulfillment,
+                    helping me make friends and hone my language abilities. Textbooks and non-fictions, while sometimes
+                    painful and dry,
+                    has been of tremendous help in terms of understanding to my field of study and the world in general.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="copyright">©2026 Minh Triet</div>
+            <div class="logo">
+                <img src="assets/images/school.png" alt="EIU">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
