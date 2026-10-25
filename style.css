@@ -79,7 +79,7 @@ nav ul li, #contacts ul li {
     padding-bottom: 30px;
 }
 .project a {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 footer .container img {
@@ -107,4 +107,66 @@ footer .copyright, footer .logo {
 footer .copyright {
     color: rgb(244, 244, 236);
     font-size: 18px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Header: stack title above nav instead of squeezing side by side */
+    header .container {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 16px;
+    }
+
+    nav ul li,
+    #contacts ul li {
+        margin-right: 0;
+    }
+
+    /* Keep anchor targets from hiding under the sticky header */
+    section {
+        scroll-margin-top: 90px;
+    }
+
+    /* Stop long text/links (emails, URLs) from overflowing the screen */
+    .container,
+    .project,
+    .project a,
+    #contacts a {
+        overflow-wrap: anywhere;
+    }
+
+    #contacts ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* Footer: allow it to size to content if it gets tight */
+    footer .container {
+        height: auto;
+        min-height: 70px;
+        gap: 10px;
+    }
+
+    footer .container img {
+        height: 40px;
+    }
+
+    footer .copyright {
+        font-size: 16px;
+    }
 }
